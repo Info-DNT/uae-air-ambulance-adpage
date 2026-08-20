@@ -9,6 +9,7 @@ This document provides a comprehensive audit of the 14-helpline network across a
 
 | Landing Page File | Column 3 Primary Helpline | Col 2 Count | Canonical Sequence | Compliance Status |
 | :--- | :--- | :--- | :--- | :--- |
+| `air-ambulance-bangladesh.html` | `+18335186535` | 13 | **Strict Match** | **100% CLEAN** |
 | `air-ambulance-india-to-international.html` | `0008000504740` | 13 | **Strict Match** | **100% CLEAN** |
 | `air-ambulance-jammu-kashmir.html` | `0008000504740` | 13 | **Strict Match** | **100% CLEAN** |
 | `air-ambulance-ksa.html` | `+9668001010817` | 13 | **Strict Match** | **100% CLEAN** |
@@ -16,9 +17,12 @@ This document provides a comprehensive audit of the 14-helpline network across a
 | `air-ambulance-philippines.html` | `+63180015500181` | 13 | **Strict Match** | **100% CLEAN** |
 | `air-ambulance-portblair.html` | `0008000504740` | 13 | **Strict Match** | **100% CLEAN** |
 | `air-ambulance-seychelles.html` | `+2484632054` | 13 | **Strict Match** | **100% CLEAN** |
+| `air-ambulance-spain.html` | `+18335186535` | 13 | **Strict Match** | **100% CLEAN** |
+| `air-ambulance-tanzania.html` | `+255800120158` | 13 | **Strict Match** | **100% CLEAN** |
 | `air-ambulance-uae.html` | `+9718000160098` | 13 | **Strict Match** | **100% CLEAN** |
 | `air-ambulance-uk.html` | `+448002294751` | 13 | **Strict Match** | **100% CLEAN** |
 | `air-ambulance-usa.html` | `+18335186535` | 13 | **Strict Match** | **100% CLEAN** |
+| `air-ambulance-vietnam.html` | `+8412032123` | 13 | **Strict Match** | **100% CLEAN** |
 
 ## Standard HTML Format Reference
 ```html

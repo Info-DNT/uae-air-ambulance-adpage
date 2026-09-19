@@ -391,11 +391,13 @@
                                 <label
                                     class="block text-[10px] font-black uppercase tracking-widest text-primary/70 mb-2">Phone
                                     Number</label>
-                                <input type="tel" name="phone" required pattern="\+?[0-9]{8,15}"
+                                <input type="tel" name="phone" id="phone-input" required pattern="\+?[0-9]{8,15}"
                                     title="Please enter your complete phone number including your country code (at least 8 digits total)"
-                                    oninput="this.value = this.value.replace(/[^0-9+]/g, '')"
+                                    oninput="this.value = this.value.replace(/[^0-9+]/g, ''); validatePhoneByCountry(this);"
+                                    onblur="validatePhoneByCountry(this)"
                                     class="w-full bg-gray-100 border border-gray-200 rounded-xl px-4 py-3 text-primary font-body text-[11.5px] placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary/40 focus:bg-white transition-all"
                                     placeholder="+91">
+                                <p id="phone-error" class="hidden text-[10px] font-semibold text-red-600 mt-1.5"></p>
                             </div>
                             <div class="animate-fade-in-up delay-300">
                                 <label
@@ -663,44 +665,33 @@
     </section>
 
 
-    <!-- Air Ambulance Cost in India Section -->
+    <!-- Air Ambulance Services in India Section -->
     <section class="py-16 bg-white border-b border-outline-variant/10 relative overflow-hidden">
         <div class="container mx-auto px-6 md:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
                 <!-- Text Content -->
                 <div class="scroll-reveal-left">
-                    <span class="text-xs font-black uppercase tracking-widest text-secondary mb-2 block">Transparent
-                        Pricing</span>
+                    <span class="text-xs font-black uppercase tracking-widest text-secondary mb-2 block">24X7 Air
+                        Ambulance</span>
                     <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-6 tracking-tighter">
-                        Air Ambulance &amp; Airline Stretcher Costs in India
+                        Air Ambulance Services in India &ndash; 24X7 Medical Air Ambulance &amp; Evacuation
                     </h2>
                     <div class="text-on-surface-variant font-body leading-relaxed space-y-4 text-sm">
                         <p>
-                            The cost of medical repatriation in India depends on the chosen transport configuration, the
-                            destination, and the level of ICU care required. We provide tailored medical transit options
-                            ranging from Dedicated ICU Air Ambulances for critical patients to highly cost-effective
-                            Commercial <a href="https://airmedical24x7.com/airline-stretcher-services"
-                                class="font-bold text-secondary underline hover:text-primary transition-colors"
-                                target="_blank" rel="noopener">Airline Stretcher Services</a> and Flight Medical Escorts
-                            for stable individuals. Every mission is custom-planned to align perfectly with the
-                            patient's precise medical needs.
+                            When a medical emergency requires immediate transportation, every minute matters. Air
+                            Medical 24X7 provides reliable air ambulance services in India for critical patients who
+                            need rapid, medically supervised transportation between cities, hospitals, and countries.
                         </p>
                         <p>
-                            We deliver fully transparent, all-inclusive pricing for all international medical
-                            evacuations from India, with absolutely no hidden fees. Our pricing covers end-to-end
-                            medical logistics—including bedside-to-bedside ground ambulance transfers, specialised
-                            flight crews, medical clearance documentation, and airline coordination. Whether utilizing a
-                            private air ambulance or a commercial airline stretcher setup, we guarantee the highest
-                            global safety standards at competitive rates.
-                        </p>
-                        <p>
-                            We provide medical transfers from all major locations in India, including Delhi, Mumbai,
-                            Bengaluru, Chennai, Kolkata, and Hyderabad, to destinations nationwide and worldwide,
-                            ensuring seamless bedside-to-bedside patient transportation.
+                            Whether you need an air ambulance in Delhi, Mumbai, Chennai, Kolkata, Bengaluru,
+                            Hyderabad, Jammu &amp; Kashmir, Srinagar, Assam, Sikkim, Arunachal Pradesh, Meghalaya,
+                            Manipur, Tripura, Nagaland, Port Blair, or another location in India, our medical
+                            coordination team can arrange a customized transfer based on clinical and logistical
+                            requirements.
                         </p>
                         <p class="font-bold text-primary">
-                            Contact our Global Command Center 24X7 for a customised quote. Our dispatch team responds
-                            within 30 minutes.
+                            Need an air ambulance urgently? Contact our 24X7 medical coordination team for a
+                            personalized assessment and quotation.
                         </p>
                         <div class="pt-4">
                             <a onclick="return gtag_report_phone_conversion(this.href);" href="tel:0008000504740"
@@ -717,7 +708,100 @@
                     <div
                         class="aspect-[16/10] bg-primary rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 group max-w-xl mx-auto lg:mx-0">
                         <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            src="/ads/assets/Delhi_airport.jfif" alt="Air Ambulance Cost in India" />
+                            src="/ads/assets/Delhi_airport.jfif" alt="Air Ambulance Services in India" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- 24X7 Air Ambulance Service in India — feature grid -->
+            <div class="mt-16 max-w-6xl mx-auto scroll-reveal">
+                <h3 class="font-headline text-2xl md:text-3xl font-extrabold text-primary mb-3 tracking-tighter text-center">
+                    24X7 Air Ambulance Service in India
+                </h3>
+                <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+                    Air Medical 24X7 coordinates domestic and international air ambulance services across India,
+                    helping patients access appropriate medical facilities when road transportation is impractical,
+                    too slow, or medically unsuitable.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                            <span class="material-symbols-outlined text-xl">support_agent</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-primary text-base mb-2">24X7 Emergency Assistance</h4>
+                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
+                            Our India operations team is available around the clock to coordinate urgent medical
+                            transportation and assist families, hospitals, insurers, and other authorized
+                            representatives.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                            <span class="material-symbols-outlined text-xl">medical_services</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-primary text-base mb-2">Experienced Medical
+                            Coordination</h4>
+                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
+                            Each case is assessed according to the patient's medical condition and transportation
+                            requirements so that the appropriate level of medical support can be planned.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                            <span class="material-symbols-outlined text-xl">monitor_heart</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-primary text-base mb-2">ICU Air Ambulance
+                            Capability</h4>
+                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
+                            For patients requiring intensive medical supervision, dedicated air ambulance aircraft
+                            can be arranged with appropriate critical-care equipment and trained medical personnel.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                            <span class="material-symbols-outlined text-xl">bed</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-primary text-base mb-2">Bed-to-Bed Medical Transfer</h4>
+                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
+                            We coordinate transportation from the referring hospital or residence to the airport,
+                            flight, receiving airport, and destination hospital, helping reduce gaps between
+                            different stages of the journey.
+                        </p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                            <span class="material-symbols-outlined text-xl">public</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-primary text-base mb-2">Domestic &amp;
+                            International Medical Evacuation</h4>
+                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
+                            Our services can support medical transfers within India as well as international
+                            repatriation and evacuation involving India.
+                        </p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                            <span class="material-symbols-outlined text-xl">connecting_airports</span>
+                        </div>
+                        <h4 class="font-headline font-bold text-primary text-base mb-2">Domestic Air Ambulance
+                            Transfers in India</h4>
+                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
+                            Air Medical 24X7 coordinates hospital-to-hospital and bed-to-bed air ambulance transfers
+                            across India, including transfers from regional healthcare facilities to major medical
+                            centers.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -7415,6 +7499,139 @@
     <script src="/ads/supabase-config.js"></script>
 
     <script src="/ads/script.js"></script>
+
+    <script>
+        // Country-aware phone number length validation (page-specific).
+        // script.js auto-fills the country calling code via IP lookup; this
+        // checks the digits the visitor types after that code match the
+        // expected national number length for that country, and shows an
+        // inline message if not.
+        var PHONE_LENGTH_BY_CALLING_CODE = {
+            '1': [10, 10],      // USA / Canada
+            '20': [10, 10],     // Egypt
+            '212': [9, 9],      // Morocco
+            '213': [9, 9],      // Algeria
+            '216': [8, 8],      // Tunisia
+            '218': [9, 9],      // Libya
+            '222': [8, 8],      // Mauritania
+            '249': [9, 9],      // Sudan
+            '27': [9, 9],       // South Africa
+            '30': [10, 10],     // Greece
+            '31': [9, 9],       // Netherlands
+            '32': [8, 9],       // Belgium
+            '33': [9, 9],       // France
+            '34': [9, 9],       // Spain
+            '351': [9, 9],      // Portugal
+            '352': [6, 9],      // Luxembourg
+            '353': [9, 9],      // Ireland
+            '358': [9, 9],      // Finland
+            '359': [8, 9],      // Bulgaria
+            '36': [8, 9],       // Hungary
+            '370': [8, 8],      // Lithuania
+            '371': [8, 8],      // Latvia
+            '372': [7, 8],      // Estonia
+            '385': [8, 9],      // Croatia
+            '386': [8, 8],      // Slovenia
+            '39': [9, 10],      // Italy
+            '40': [9, 9],       // Romania
+            '41': [9, 9],       // Switzerland
+            '420': [9, 9],      // Czechia
+            '421': [9, 9],      // Slovakia
+            '43': [10, 11],     // Austria
+            '44': [10, 10],     // UK
+            '46': [7, 9],       // Sweden
+            '47': [8, 8],       // Norway
+            '48': [9, 9],       // Poland
+            '49': [10, 11],     // Germany
+            '63': [10, 10],     // Philippines
+            '65': [8, 8],       // Singapore
+            '66': [9, 9],       // Thailand
+            '84': [9, 10],      // Vietnam
+            '86': [11, 11],     // China
+            '880': [10, 10],    // Bangladesh
+            '81': [10, 10],     // Japan
+            '82': [9, 10],      // South Korea
+            '91': [10, 10],     // India
+            '92': [10, 10],     // Pakistan
+            '94': [9, 9],       // Sri Lanka
+            '960': [7, 7],      // Maldives
+            '961': [7, 8],      // Lebanon
+            '962': [9, 9],      // Jordan
+            '963': [9, 9],      // Syria
+            '964': [10, 10],    // Iraq
+            '965': [7, 8],      // Kuwait
+            '966': [9, 9],      // Saudi Arabia
+            '967': [9, 9],      // Yemen
+            '968': [7, 8],      // Oman
+            '971': [9, 9],      // UAE
+            '973': [8, 8],      // Bahrain
+            '974': [8, 8],      // Qatar
+            '255': [9, 9],      // Tanzania
+            '254': [9, 9],      // Kenya
+            '248': [7, 7],      // Seychelles
+        };
+        // Sorted longest-first so e.g. "971" is tried before "91" when the
+        // number starts with "971..." (both start with digit "9").
+        var CALLING_CODES_BY_LENGTH = Object.keys(PHONE_LENGTH_BY_CALLING_CODE).sort(function (a, b) {
+            return b.length - a.length;
+        });
+
+        function validatePhoneByCountry(input) {
+            var errorEl = document.getElementById('phone-error');
+            var raw = (input.value || '').trim();
+            var digits = raw.replace(/^\+/, '');
+
+            if (digits === '') {
+                input.setCustomValidity('');
+                if (errorEl) errorEl.classList.add('hidden');
+                return true;
+            }
+
+            var matchedCode = null;
+            for (var i = 0; i < CALLING_CODES_BY_LENGTH.length; i++) {
+                var code = CALLING_CODES_BY_LENGTH[i];
+                if (digits.indexOf(code) === 0) {
+                    matchedCode = code;
+                    break;
+                }
+            }
+
+            if (!matchedCode) {
+                // Unrecognized country code: fall back to the generic
+                // 8-15 digit rule already enforced by the pattern attribute.
+                input.setCustomValidity('');
+                if (errorEl) errorEl.classList.add('hidden');
+                return true;
+            }
+
+            var nationalNumber = digits.slice(matchedCode.length);
+            var range = PHONE_LENGTH_BY_CALLING_CODE[matchedCode];
+            var min = range[0], max = range[1];
+
+            if (nationalNumber.length < min || nationalNumber.length > max) {
+                var expected = (min === max) ? (min + '-digit') : (min + '-' + max + ' digit');
+                var message = 'Please enter a valid ' + expected + ' number after +' + matchedCode + '.';
+                input.setCustomValidity(message);
+                if (errorEl) {
+                    errorEl.textContent = message;
+                    errorEl.classList.remove('hidden');
+                }
+                return false;
+            }
+
+            input.setCustomValidity('');
+            if (errorEl) errorEl.classList.add('hidden');
+            return true;
+        }
+
+        // Re-validate once the IP-based country code has been auto-filled by
+        // script.js (that assignment doesn't fire an 'input' event on its own).
+        (function () {
+            var phoneInput = document.getElementById('phone-input');
+            if (!phoneInput) return;
+            setTimeout(function () { validatePhoneByCountry(phoneInput); }, 1200);
+        })();
+    </script>
 
     <script>
         // Toggle regional collapsible sections

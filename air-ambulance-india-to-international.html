@@ -736,11 +736,13 @@
                                     <label
                                         class="block text-[10px] font-black uppercase tracking-widest text-primary/70 mb-2">Phone
                                         Number</label>
-                                    <input type="tel" name="phone" required pattern="\+?[0-9]{8,15}"
+                                    <input type="tel" name="phone" id="phone-input" required pattern="\+?[0-9]{8,15}"
                                         title="Please enter your complete phone number including your country code (at least 8 digits total)"
-                                        oninput="this.value = this.value.replace(/[^0-9+]/g, '')"
+                                        oninput="this.value = this.value.replace(/[^0-9+]/g, ''); validatePhoneByCountry(this);"
+                                        onblur="validatePhoneByCountry(this)"
                                         class="w-full bg-gray-100 border border-gray-200 rounded-xl px-4 py-3 text-primary font-body text-[11.5px] placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary/40 focus:bg-white transition-all"
                                         placeholder="+971 Enter your number">
+                                    <p id="phone-error" class="hidden text-[10px] font-semibold text-red-600 mt-1.5"></p>
                                 </div>
                                 <div class="animate-fade-in-up delay-300">
                                     <label
@@ -6576,6 +6578,139 @@
     <script src="/ads/supabase-config.js"></script>
 
     <script src="/ads/script.js"></script>
+
+    <script>
+        // Country-aware phone number length validation (page-specific).
+        // script.js auto-fills the country calling code via IP lookup; this
+        // checks the digits the visitor types after that code match the
+        // expected national number length for that country, and shows an
+        // inline message if not.
+        var PHONE_LENGTH_BY_CALLING_CODE = {
+            '1': [10, 10],      // USA / Canada
+            '20': [10, 10],     // Egypt
+            '212': [9, 9],      // Morocco
+            '213': [9, 9],      // Algeria
+            '216': [8, 8],      // Tunisia
+            '218': [9, 9],      // Libya
+            '222': [8, 8],      // Mauritania
+            '249': [9, 9],      // Sudan
+            '27': [9, 9],       // South Africa
+            '30': [10, 10],     // Greece
+            '31': [9, 9],       // Netherlands
+            '32': [8, 9],       // Belgium
+            '33': [9, 9],       // France
+            '34': [9, 9],       // Spain
+            '351': [9, 9],      // Portugal
+            '352': [6, 9],      // Luxembourg
+            '353': [9, 9],      // Ireland
+            '358': [9, 9],      // Finland
+            '359': [8, 9],      // Bulgaria
+            '36': [8, 9],       // Hungary
+            '370': [8, 8],      // Lithuania
+            '371': [8, 8],      // Latvia
+            '372': [7, 8],      // Estonia
+            '385': [8, 9],      // Croatia
+            '386': [8, 8],      // Slovenia
+            '39': [9, 10],      // Italy
+            '40': [9, 9],       // Romania
+            '41': [9, 9],       // Switzerland
+            '420': [9, 9],      // Czechia
+            '421': [9, 9],      // Slovakia
+            '43': [10, 11],     // Austria
+            '44': [10, 10],     // UK
+            '46': [7, 9],       // Sweden
+            '47': [8, 8],       // Norway
+            '48': [9, 9],       // Poland
+            '49': [10, 11],     // Germany
+            '63': [10, 10],     // Philippines
+            '65': [8, 8],       // Singapore
+            '66': [9, 9],       // Thailand
+            '84': [9, 10],      // Vietnam
+            '86': [11, 11],     // China
+            '880': [10, 10],    // Bangladesh
+            '81': [10, 10],     // Japan
+            '82': [9, 10],      // South Korea
+            '91': [10, 10],     // India
+            '92': [10, 10],     // Pakistan
+            '94': [9, 9],       // Sri Lanka
+            '960': [7, 7],      // Maldives
+            '961': [7, 8],      // Lebanon
+            '962': [9, 9],      // Jordan
+            '963': [9, 9],      // Syria
+            '964': [10, 10],    // Iraq
+            '965': [7, 8],      // Kuwait
+            '966': [9, 9],      // Saudi Arabia
+            '967': [9, 9],      // Yemen
+            '968': [7, 8],      // Oman
+            '971': [9, 9],      // UAE
+            '973': [8, 8],      // Bahrain
+            '974': [8, 8],      // Qatar
+            '255': [9, 9],      // Tanzania
+            '254': [9, 9],      // Kenya
+            '248': [7, 7],      // Seychelles
+        };
+        // Sorted longest-first so e.g. "971" is tried before "91" when the
+        // number starts with "971..." (both start with digit "9").
+        var CALLING_CODES_BY_LENGTH = Object.keys(PHONE_LENGTH_BY_CALLING_CODE).sort(function (a, b) {
+            return b.length - a.length;
+        });
+
+        function validatePhoneByCountry(input) {
+            var errorEl = document.getElementById('phone-error');
+            var raw = (input.value || '').trim();
+            var digits = raw.replace(/^\+/, '');
+
+            if (digits === '') {
+                input.setCustomValidity('');
+                if (errorEl) errorEl.classList.add('hidden');
+                return true;
+            }
+
+            var matchedCode = null;
+            for (var i = 0; i < CALLING_CODES_BY_LENGTH.length; i++) {
+                var code = CALLING_CODES_BY_LENGTH[i];
+                if (digits.indexOf(code) === 0) {
+                    matchedCode = code;
+                    break;
+                }
+            }
+
+            if (!matchedCode) {
+                // Unrecognized country code: fall back to the generic
+                // 8-15 digit rule already enforced by the pattern attribute.
+                input.setCustomValidity('');
+                if (errorEl) errorEl.classList.add('hidden');
+                return true;
+            }
+
+            var nationalNumber = digits.slice(matchedCode.length);
+            var range = PHONE_LENGTH_BY_CALLING_CODE[matchedCode];
+            var min = range[0], max = range[1];
+
+            if (nationalNumber.length < min || nationalNumber.length > max) {
+                var expected = (min === max) ? (min + '-digit') : (min + '-' + max + ' digit');
+                var message = 'Please enter a valid ' + expected + ' number after +' + matchedCode + '.';
+                input.setCustomValidity(message);
+                if (errorEl) {
+                    errorEl.textContent = message;
+                    errorEl.classList.remove('hidden');
+                }
+                return false;
+            }
+
+            input.setCustomValidity('');
+            if (errorEl) errorEl.classList.add('hidden');
+            return true;
+        }
+
+        // Re-validate once the IP-based country code has been auto-filled by
+        // script.js (that assignment doesn't fire an 'input' event on its own).
+        (function () {
+            var phoneInput = document.getElementById('phone-input');
+            if (!phoneInput) return;
+            setTimeout(function () { validatePhoneByCountry(phoneInput); }, 1200);
+        })();
+    </script>
 
     <script>
         // Toggle regional collapsible sections

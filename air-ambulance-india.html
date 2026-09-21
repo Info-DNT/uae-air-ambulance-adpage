@@ -61,7 +61,7 @@
         fetch('https://api.ipify.org?format=json')
             .then(function (res) { return res.json(); })
             .then(function (data) { if (data && data.ip) callerIP = data.ip; })
-            .catch(function () {});
+            .catch(function () { });
 
         // GA4 call-button click tracking
         document.addEventListener('click', function (e) {
@@ -237,7 +237,7 @@
             },
         }
     </script>
-    <link rel="canonical" href="https://airmedical24x7.com/air-ambulance-india-to-international" />
+    <link rel="canonical" href="https://airmedical24x7.com/air-ambulance-india" />
 
     <script type="application/ld+json">
     {
@@ -374,7 +374,8 @@
                 </a>
 
                 <!-- Right Panel: White / Quote Form -->
-                <div class="quote-form-mobile p-6 md:p-10 bg-white rounded-3xl shadow-2xl w-full lg:w-[45%] lg:max-w-md">
+                <div
+                    class="quote-form-mobile p-6 md:p-10 bg-white rounded-3xl shadow-2xl w-full lg:w-[45%] lg:max-w-md">
                     <div class="mb-5 text-center">
                         <h3 class="font-headline text-2xl font-extrabold text-primary mb-1">
                             Request an Air Ambulance Quote
@@ -399,12 +400,23 @@
                                 <label
                                     class="block text-[10px] font-black uppercase tracking-widest text-primary/70 mb-2">Phone
                                     Number</label>
-                                <input type="tel" name="phone" id="phone-input" required pattern="\+?[0-9]{8,15}"
-                                    title="Please enter your complete phone number including your country code (at least 8 digits total)"
-                                    oninput="this.value = this.value.replace(/[^0-9+]/g, ''); validatePhoneByCountry(this);"
-                                    onblur="validatePhoneByCountry(this)"
-                                    class="w-full bg-gray-100 border border-gray-200 rounded-xl px-4 py-3 text-primary font-body text-[11.5px] placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary/40 focus:bg-white transition-all"
-                                    placeholder="+91">
+                                <div
+                                    class="w-full bg-gray-100 border border-gray-200 rounded-xl flex items-stretch overflow-hidden focus-within:ring-2 focus-within:ring-secondary/30 focus-within:border-secondary/40 focus-within:bg-white transition-all">
+                                    <input type="text" id="phone-code-badge" inputmode="tel" size="4"
+                                        title="Country calling code (edit if auto-detected incorrectly)"
+                                        oninput="this.value = this.value.replace(/[^0-9+]/g, ''); if (this.value &amp;&amp; this.value[0] !== '+') this.value = '+' + this.value; this.dataset.userEdited = 'true'; syncPhoneField();"
+                                        class="flex items-center bg-transparent pl-4 pr-3 text-primary font-body text-[11.5px] font-bold border-r border-gray-300 focus:outline-none text-center"
+                                        value="+91">
+                                    <input type="tel" id="phone-national-input" inputmode="numeric"
+                                        autocomplete="tel-national"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, ''); syncPhoneField();"
+                                        onblur="syncPhoneField()"
+                                        class="flex-1 min-w-0 bg-transparent px-4 py-3 text-primary font-body text-[11.5px] placeholder:text-gray-500 focus:outline-none"
+                                        placeholder="Phone Number">
+                                </div>
+                                <!-- Real field script.js and the form submission depend on; kept in
+                                     sync with the badge + digits above, not rendered directly. -->
+                                <input type="hidden" name="phone" id="phone-input">
                                 <p id="phone-error" class="hidden text-[10px] font-semibold text-red-600 mt-1.5"></p>
                             </div>
                             <div class="animate-fade-in-up delay-300">
@@ -723,10 +735,12 @@
 
             <!-- 24X7 Air Ambulance Service in India — feature grid -->
             <div class="mt-16 max-w-6xl mx-auto scroll-reveal">
-                <h3 class="font-headline text-2xl md:text-3xl font-extrabold text-primary mb-3 tracking-tighter text-center">
+                <h3
+                    class="font-headline text-2xl md:text-3xl font-extrabold text-primary mb-3 tracking-tighter text-center">
                     24X7 Air Ambulance Service in India
                 </h3>
-                <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+                <p
+                    class="text-on-surface-variant font-body text-sm leading-relaxed mb-10 text-center max-w-3xl mx-auto">
                     Air Medical 24X7 coordinates domestic and international air ambulance services across India,
                     helping patients access appropriate medical facilities when road transportation is impractical,
                     too slow, or medically unsuitable.
@@ -734,8 +748,10 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Feature 1 -->
-                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                    <div
+                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
                             <span class="material-symbols-outlined text-xl">support_agent</span>
                         </div>
                         <h4 class="font-headline font-bold text-primary text-base mb-2">24X7 Emergency Assistance</h4>
@@ -747,8 +763,10 @@
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                    <div
+                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
                             <span class="material-symbols-outlined text-xl">medical_services</span>
                         </div>
                         <h4 class="font-headline font-bold text-primary text-base mb-2">Experienced Medical
@@ -760,8 +778,10 @@
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                    <div
+                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
                             <span class="material-symbols-outlined text-xl">monitor_heart</span>
                         </div>
                         <h4 class="font-headline font-bold text-primary text-base mb-2">ICU Air Ambulance
@@ -773,8 +793,10 @@
                     </div>
 
                     <!-- Feature 4 -->
-                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                    <div
+                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
                             <span class="material-symbols-outlined text-xl">bed</span>
                         </div>
                         <h4 class="font-headline font-bold text-primary text-base mb-2">Bed-to-Bed Medical Transfer</h4>
@@ -786,8 +808,10 @@
                     </div>
 
                     <!-- Feature 5 -->
-                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                    <div
+                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
                             <span class="material-symbols-outlined text-xl">public</span>
                         </div>
                         <h4 class="font-headline font-bold text-primary text-base mb-2">Domestic &amp;
@@ -799,8 +823,10 @@
                     </div>
 
                     <!-- Feature 6 -->
-                    <div class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                    <div
+                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
                             <span class="material-symbols-outlined text-xl">connecting_airports</span>
                         </div>
                         <h4 class="font-headline font-bold text-primary text-base mb-2">Domestic Air Ambulance
@@ -7632,12 +7658,61 @@
             return true;
         }
 
+        // Combine the visible country-code badge + national number into the
+        // real hidden field that script.js and form submission read.
+        function syncPhoneField() {
+            var badge = document.getElementById('phone-code-badge');
+            var national = document.getElementById('phone-national-input');
+            var hidden = document.getElementById('phone-input');
+            if (!badge || !national || !hidden) return;
+            hidden.value = badge.value.trim() + national.value.trim();
+            validatePhoneByCountry(hidden);
+        }
+
         // Re-validate once the IP-based country code has been auto-filled by
-        // script.js (that assignment doesn't fire an 'input' event on its own).
+        // script.js (that assignment doesn't fire an 'input' event on its own),
+        // and mirror the detected code into the visible badge.
         (function () {
             var phoneInput = document.getElementById('phone-input');
+            var badge = document.getElementById('phone-code-badge');
             if (!phoneInput) return;
-            setTimeout(function () { validatePhoneByCountry(phoneInput); }, 1200);
+            setTimeout(function () {
+                if (badge && phoneInput.value && badge.dataset.userEdited !== 'true') {
+                    badge.value = phoneInput.value;
+                }
+                validatePhoneByCountry(phoneInput);
+            }, 1200);
+        })();
+
+        // Block submission on an invalid/empty phone number before the form's
+        // own submit handling (Supabase, Turnstile, etc.) ever runs.
+        (function () {
+            var form = document.getElementById('quote-form');
+            if (!form) return;
+            var submitBtn = form.querySelector('button[type="submit"]');
+            if (!submitBtn) return;
+            submitBtn.addEventListener('click', function (e) {
+                syncPhoneField();
+                var hidden = document.getElementById('phone-input');
+                var national = document.getElementById('phone-national-input');
+                var errorEl = document.getElementById('phone-error');
+                if (!national || !national.value.trim()) {
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    var msg = 'Please enter your phone number.';
+                    if (errorEl) {
+                        errorEl.textContent = msg;
+                        errorEl.classList.remove('hidden');
+                    }
+                    if (national) national.focus();
+                    return;
+                }
+                if (!validatePhoneByCountry(hidden)) {
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    national.focus();
+                }
+            });
         })();
     </script>
 

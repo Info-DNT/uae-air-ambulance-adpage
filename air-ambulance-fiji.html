@@ -725,155 +725,568 @@
 
 
     <!-- Air Ambulance Services in Fiji Section -->
-    <section class="py-16 bg-white border-b border-outline-variant/10 relative overflow-hidden">
+    <section id="fiji-air-ambulance-section"
+        class="py-16 md:py-20 bg-white border-b border-outline-variant/10 relative overflow-hidden">
+        <!-- Crisp dotted backdrop -->
+        <div class="absolute inset-x-0 top-0 h-[560px] pointer-events-none opacity-60"
+            style="background-image: radial-gradient(rgba(0,53,95,0.10) 1px, transparent 1px); background-size: 22px 22px; -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent); mask-image: linear-gradient(to bottom, #000 40%, transparent);">
+        </div>
+
         <div class="container mx-auto px-6 md:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-                <!-- Text Content -->
-                <div class="scroll-reveal-left">
-                    <span class="text-xs font-black uppercase tracking-widest text-secondary mb-2 block">24X7 Air
-                        Ambulance</span>
-                    <h1 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-6 tracking-tighter">
-                        Air Ambulance Services in Fiji &ndash; 24X7 Medical Air Ambulance &amp; Evacuation
-                    </h1>
-                    <div class="text-on-surface-variant font-body leading-relaxed space-y-4 text-sm">
-                        <p>
-                            When a medical emergency requires immediate transportation, every minute matters. Air
-                            Medical 24X7 provides reliable air ambulance services in Fiji for critical patients who
-                            need rapid, medically supervised transportation between cities, hospitals, and countries.
-                        </p>
-                        <p>
-                            Whether you need an air ambulance in Suva, Nadi, Lautoka, Labasa, Ba,
-                            Sigatoka, Savusavu, Levuka, Nausori, Rakiraki, Tavua, Taveuni,
-                            or another location in Fiji, our medical coordination team can arrange a
-                            customized transfer based on clinical and logistical requirements.
-                        </p>
-                        <p class="font-bold text-primary">
-                            Need an air ambulance urgently? Contact our 24X7 medical coordination team for a
-                            personalized assessment and quotation.
-                        </p>
-                        <div class="pt-4">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Intro: text + image -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+                    <!-- Text -->
+                    <div class="lg:col-span-6 scroll-reveal-left">
+                        <span
+                            class="inline-flex items-center gap-3 text-xs font-black uppercase tracking-widest text-secondary mb-4">
+                            <span class="w-8 h-0.5 bg-secondary rounded-full"></span>24X7 Air Ambulance
+                        </span>
+                        <h1
+                            class="font-headline text-3xl md:text-4xl lg:text-[2.6rem] lg:leading-[1.1] font-extrabold text-primary mb-6 tracking-tighter">
+                            Air Ambulance Services in Fiji &ndash; 24X7 Emergency Medical Evacuation
+                        </h1>
+                        <div
+                            class="relative pl-5 border-l-4 border-secondary/70 mb-7">
+                            <p class="text-on-surface-variant font-body leading-relaxed text-sm md:text-[15px]">
+                                A medical emergency in another country can be frightening, especially when a patient
+                                requires specialised treatment that may not be readily available nearby. During such
+                                difficult moments, arranging safe and medically supervised transportation becomes an
+                                important consideration.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
                             <a onclick="return gtag_report_phone_conversion(this.href);" href="tel:0008000504740"
-                                class="inline-flex items-center gap-2 px-6 py-3.5 bg-secondary hover:bg-primary text-white font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 shadow-md hover:shadow-lg">
-                                <span class="material-symbols-outlined text-sm">call</span>
+                                class="group/btn inline-flex items-center gap-2 px-6 py-3.5 bg-secondary hover:bg-primary text-white font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 shadow-lg shadow-secondary/25 hover:shadow-primary/25 hover:-translate-y-0.5">
+                                <span class="material-symbols-outlined text-sm group-hover/btn:animate-pulse">call</span>
                                 Call Fiji Emergency Desk
+                            </a>
+                            <a href="#quote-form"
+                                class="group/btn inline-flex items-center gap-2 px-6 py-3.5 border-2 border-primary/15 hover:border-primary hover:bg-primary hover:text-white text-primary font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 hover:-translate-y-0.5">
+                                Get a Quote
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="lg:col-span-6 scroll-reveal-right">
+                        <div
+                            class="rounded-2xl overflow-hidden shadow-xl group max-w-xl mx-auto lg:mr-0">
+                            <img class="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                                src="/ads/assets/air_ambulance_patient_care.png"
+                                alt="Medical team caring for a patient during an air ambulance transfer – air ambulance services in Fiji"
+                                loading="lazy" decoding="async" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fiji coverage: island-hop strip -->
+                <div class="mt-16 md:mt-20 scroll-reveal">
+                    <div class="rounded-2xl bg-surface-container-low border border-outline-variant/20 p-6 md:p-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 items-center">
+                            <div>
+                                <span
+                                    class="text-xs font-black uppercase tracking-widest text-secondary mb-2 block">Coverage
+                                    Across Fiji</span>
+                                <p class="text-on-surface-variant font-body text-sm leading-relaxed">
+                                    Air Medical 24X7 coordinates air ambulance and medical evacuation services across
+                                    Fiji, including Suva, Nadi, Lautoka, Sigatoka, Nausori, Labasa, and Savusavu.
+                                </p>
+                            </div>
+                            <div class="lg:col-span-2 relative">
+                                <span
+                                    class="hidden lg:block absolute left-4 right-4 top-1/2 border-t-2 border-dashed border-primary/20"></span>
+                                <div class="relative flex flex-wrap lg:flex-nowrap lg:justify-between gap-2 lg:gap-1">
+                                    <span
+                                        class="relative inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-white border border-outline-variant/30 shadow-sm text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-default"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Suva</span>
+                                    <span
+                                        class="relative inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-white border border-outline-variant/30 shadow-sm text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-default"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Nadi</span>
+                                    <span
+                                        class="relative inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-white border border-outline-variant/30 shadow-sm text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-default"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Lautoka</span>
+                                    <span
+                                        class="relative inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-white border border-outline-variant/30 shadow-sm text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-default"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Sigatoka</span>
+                                    <span
+                                        class="relative inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-white border border-outline-variant/30 shadow-sm text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-default"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Nausori</span>
+                                    <span
+                                        class="relative inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-white border border-outline-variant/30 shadow-sm text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-default"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Labasa</span>
+                                    <span
+                                        class="relative inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-white border border-outline-variant/30 shadow-sm text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-default"><span
+                                            class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Savusavu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patient needs -->
+                <div class="mt-14">
+                    <p
+                        class="text-on-surface-variant font-body text-sm leading-relaxed mb-8 text-center max-w-3xl mx-auto scroll-reveal">
+                        Whether a patient requires an urgent hospital transfer, transportation between islands, an
+                        international medical evacuation, or assistance returning to their home country, our team helps
+                        organise suitable arrangements according to the patient's medical condition and travel
+                        requirements.
+                    </p>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+                        <div
+                            class="scroll-reveal-up relative overflow-hidden p-5 rounded-xl bg-white border border-outline-variant/30 hover:border-primary/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                            <span
+                                class="absolute top-0 left-0 h-[3px] w-0 bg-secondary group-hover:w-full transition-all duration-500"></span>
+                            <span
+                                class="w-11 h-11 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-3 group-hover:bg-secondary group-hover:text-white transition-colors duration-300"><span
+                                    class="material-symbols-outlined text-xl">emergency</span></span>
+                            <h3 class="font-headline font-bold text-primary text-sm leading-snug">Urgent Hospital
+                                Transfer</h3>
+                        </div>
+                        <div
+                            class="scroll-reveal-up delay-100 relative overflow-hidden p-5 rounded-xl bg-white border border-outline-variant/30 hover:border-primary/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                            <span
+                                class="absolute top-0 left-0 h-[3px] w-0 bg-secondary group-hover:w-full transition-all duration-500"></span>
+                            <span
+                                class="w-11 h-11 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-3 group-hover:bg-secondary group-hover:text-white transition-colors duration-300"><span
+                                    class="material-symbols-outlined text-xl">sailing</span></span>
+                            <h3 class="font-headline font-bold text-primary text-sm leading-snug">Transportation
+                                Between Islands</h3>
+                        </div>
+                        <div
+                            class="scroll-reveal-up delay-200 relative overflow-hidden p-5 rounded-xl bg-white border border-outline-variant/30 hover:border-primary/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                            <span
+                                class="absolute top-0 left-0 h-[3px] w-0 bg-secondary group-hover:w-full transition-all duration-500"></span>
+                            <span
+                                class="w-11 h-11 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-3 group-hover:bg-secondary group-hover:text-white transition-colors duration-300"><span
+                                    class="material-symbols-outlined text-xl">public</span></span>
+                            <h3 class="font-headline font-bold text-primary text-sm leading-snug">International
+                                Medical Evacuation</h3>
+                        </div>
+                        <div
+                            class="scroll-reveal-up delay-300 relative overflow-hidden p-5 rounded-xl bg-white border border-outline-variant/30 hover:border-primary/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                            <span
+                                class="absolute top-0 left-0 h-[3px] w-0 bg-secondary group-hover:w-full transition-all duration-500"></span>
+                            <span
+                                class="w-11 h-11 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-3 group-hover:bg-secondary group-hover:text-white transition-colors duration-300"><span
+                                    class="material-symbols-outlined text-xl">home_health</span></span>
+                            <h3 class="font-headline font-bold text-primary text-sm leading-snug">Returning to Home
+                                Country</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transport solutions (dark band) -->
+                <div
+                    class="mt-14 scroll-reveal relative overflow-hidden rounded-2xl bg-primary text-white p-7 md:p-10 shadow-xl">
+                    <span
+                        class="material-symbols-outlined absolute -right-8 -top-10 text-[200px] text-white/5 pointer-events-none">flight</span>
+                    <div class="relative grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                        <div>
+                            <span
+                                class="text-xs font-black uppercase tracking-widest text-primary-fixed-dim mb-2 block">Medical
+                                Transport Solutions</span>
+                            <p class="text-white/85 font-body text-sm leading-relaxed">
+                                Our medical transport solutions include dedicated ICU-equipped air ambulance flights,
+                                commercial airline stretcher transportation, medical escort services, and bed-to-bed
+                                patient transfers.
+                            </p>
+                        </div>
+                        <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div
+                                class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white hover:text-primary hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+                                <span
+                                    class="w-11 h-11 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><span
+                                        class="material-symbols-outlined text-xl">monitor_heart</span></span>
+                                <span class="font-headline font-bold text-sm leading-snug">Dedicated ICU-Equipped Air
+                                    Ambulance Flights</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white hover:text-primary hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+                                <span
+                                    class="w-11 h-11 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><span
+                                        class="material-symbols-outlined text-xl">airline_seat_flat</span></span>
+                                <span class="font-headline font-bold text-sm leading-snug">Commercial Airline Stretcher
+                                    Transportation</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white hover:text-primary hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+                                <span
+                                    class="w-11 h-11 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><span
+                                        class="material-symbols-outlined text-xl">medical_services</span></span>
+                                <span class="font-headline font-bold text-sm leading-snug">Medical Escort Services</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white hover:text-primary hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group">
+                                <span
+                                    class="w-11 h-11 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><span
+                                        class="material-symbols-outlined text-xl">bed</span></span>
+                                <span class="font-headline font-bold text-sm leading-snug">Bed-to-Bed Patient
+                                    Transfers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coordination network + CTA -->
+                <div class="mt-14 grid grid-cols-1 lg:grid-cols-5 gap-6">
+                    <!-- Coordination -->
+                    <div
+                        class="lg:col-span-3 scroll-reveal-left rounded-2xl bg-white border border-outline-variant/20 p-7 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <span class="text-xs font-black uppercase tracking-widest text-secondary mb-2 block">International
+                            Medical Transport Network</span>
+                        <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                            Working with an international medical transport network, our coordination team assists with
+                            medical documentation, aircraft arrangements, qualified medical personnel, ground ambulance
+                            connections, and communication between the sending and receiving hospitals.
+                        </p>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                            <li
+                                class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low hover:bg-primary hover:text-white transition-colors duration-300 group">
+                                <span
+                                    class="material-symbols-outlined text-secondary group-hover:text-white text-xl transition-colors duration-300">description</span>
+                                <span class="font-headline font-bold text-xs text-primary group-hover:text-white transition-colors duration-300">Medical
+                                    Documentation</span>
+                            </li>
+                            <li
+                                class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low hover:bg-primary hover:text-white transition-colors duration-300 group">
+                                <span
+                                    class="material-symbols-outlined text-secondary group-hover:text-white text-xl transition-colors duration-300">flight</span>
+                                <span class="font-headline font-bold text-xs text-primary group-hover:text-white transition-colors duration-300">Aircraft
+                                    Arrangements</span>
+                            </li>
+                            <li
+                                class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low hover:bg-primary hover:text-white transition-colors duration-300 group">
+                                <span
+                                    class="material-symbols-outlined text-secondary group-hover:text-white text-xl transition-colors duration-300">stethoscope</span>
+                                <span class="font-headline font-bold text-xs text-primary group-hover:text-white transition-colors duration-300">Qualified
+                                    Medical Personnel</span>
+                            </li>
+                            <li
+                                class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low hover:bg-primary hover:text-white transition-colors duration-300 group">
+                                <span
+                                    class="material-symbols-outlined text-secondary group-hover:text-white text-xl transition-colors duration-300">ambulance</span>
+                                <span class="font-headline font-bold text-xs text-primary group-hover:text-white transition-colors duration-300">Ground
+                                    Ambulance Connections</span>
+                            </li>
+                            <li
+                                class="sm:col-span-2 flex items-center gap-3 p-3 rounded-lg bg-surface-container-low hover:bg-primary hover:text-white transition-colors duration-300 group">
+                                <span
+                                    class="material-symbols-outlined text-secondary group-hover:text-white text-xl transition-colors duration-300">forum</span>
+                                <span class="font-headline font-bold text-xs text-primary group-hover:text-white transition-colors duration-300">Communication
+                                    Between Sending &amp; Receiving Hospitals</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CTA -->
+                    <div
+                        class="lg:col-span-2 scroll-reveal-right rounded-2xl bg-secondary text-white p-7 shadow-xl shadow-secondary/20 flex flex-col">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="relative flex h-2.5 w-2.5">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+                            </span>
+                            <span class="text-[10px] font-black uppercase tracking-widest">Our Team Is Available
+                                24X7</span>
+                        </div>
+                        <p class="font-body text-sm leading-relaxed text-white/90 mb-5">
+                            If you require an air ambulance in Fiji, contact Air Medical 24X7 to discuss the patient's
+                            condition, current location, and intended destination. Our team is available 24X7 to assist
+                            with your enquiry.
+                        </p>
+                        <ol class="space-y-2 mb-6">
+                            <li class="flex items-center gap-3 text-xs font-bold"><span
+                                    class="w-6 h-6 shrink-0 rounded-full bg-white text-secondary flex items-center justify-center font-black text-[11px]">1</span>Patient's
+                                condition</li>
+                            <li class="flex items-center gap-3 text-xs font-bold"><span
+                                    class="w-6 h-6 shrink-0 rounded-full bg-white text-secondary flex items-center justify-center font-black text-[11px]">2</span>Current
+                                location</li>
+                            <li class="flex items-center gap-3 text-xs font-bold"><span
+                                    class="w-6 h-6 shrink-0 rounded-full bg-white text-secondary flex items-center justify-center font-black text-[11px]">3</span>Intended
+                                destination</li>
+                        </ol>
+                        <div class="mt-auto space-y-2">
+                            <a onclick="return gtag_report_phone_conversion(this.href);" href="tel:0008000504740"
+                                class="flex items-center justify-center gap-2 w-full px-5 py-3 bg-white text-secondary hover:bg-primary hover:text-white font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 shadow-md">
+                                <span class="material-symbols-outlined text-sm">call</span>
+                                Contact Air Medical 24X7
+                            </a>
+                            <a href="#quote-form"
+                                class="flex items-center justify-center gap-2 w-full px-5 py-3 border border-white/40 hover:bg-white/10 text-white font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300">
+                                <span class="material-symbols-outlined text-sm">request_quote</span>
+                                Request a Quote
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Photo -->
-                <div class="scroll-reveal-right">
+
+    <!-- Emergency Air Ambulance & International Medical Evacuation (Fiji) Section -->
+    <section id="fiji-emergency-evacuation-section"
+        class="py-16 md:py-20 bg-surface-container-low border-b border-outline-variant/10 relative overflow-hidden">
+        <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 -left-32 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 md:px-8 relative z-10">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Block 1: Emergency Air Ambulance in Fiji -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+                    <div class="scroll-reveal-left">
+                        <span
+                            class="inline-flex items-center gap-3 text-xs font-black uppercase tracking-widest text-secondary mb-4">
+                            <span class="w-8 h-0.5 bg-secondary rounded-full"></span>Emergency Air Ambulance
+                        </span>
+                        <h2
+                            class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-6 tracking-tighter">
+                            Emergency Air Ambulance in Fiji &ndash; Medical Support When It Matters Most
+                        </h2>
+                        <p class="text-on-surface-variant font-body text-sm md:text-[15px] leading-relaxed mb-6">
+                            Fiji is known for its beautiful islands, coastal communities, and popular tourist
+                            destinations. However, arranging medical transportation can become challenging when a
+                            patient is located away from major healthcare facilities or requires specialised treatment
+                            overseas.
+                        </p>
+                        <div
+                            class="relative overflow-hidden flex items-start gap-4 rounded-2xl bg-primary text-white p-5 md:p-6 shadow-lg">
+                            <span
+                                class="material-symbols-outlined absolute -right-4 -bottom-6 text-[110px] text-white/5 pointer-events-none">health_and_safety</span>
+                            <span
+                                class="w-11 h-11 shrink-0 rounded-xl bg-secondary flex items-center justify-center"><span
+                                    class="material-symbols-outlined text-xl">airline_seat_flat</span></span>
+                            <p class="relative font-body text-sm leading-relaxed text-white/90">
+                                For patients who cannot safely travel using conventional transportation, an air
+                                ambulance may provide an appropriate option for medically supervised transfer to a
+                                suitable healthcare facility.
+                            </p>
+                        </div>
+                    </div>
+
                     <div
-                        class="aspect-[16/10] bg-primary rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 group max-w-xl mx-auto lg:mx-0">
-                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            src="/ads/assets/air_ambulance_patient_care.png" alt="Air Ambulance Services in Fiji" />
+                        class="scroll-reveal-right bg-white rounded-2xl shadow-xl shadow-primary/5 border border-outline-variant/20 overflow-hidden">
+                        <div class="px-7 pt-7 pb-6">
+                            <span class="text-[11px] font-black uppercase tracking-widest text-secondary mb-2 block">How
+                                Each Arrangement Is Planned</span>
+                            <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-5">
+                                Air Medical 24X7 coordinates emergency air ambulance arrangements in Fiji based on the
+                                patient's medical condition, travel distance, aircraft availability, and destination
+                                hospital requirements.
+                            </p>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div
+                                    class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-primary transition-colors duration-300 group">
+                                    <span
+                                        class="w-9 h-9 shrink-0 rounded-lg bg-white text-secondary flex items-center justify-center shadow-sm"><span
+                                            class="material-symbols-outlined text-lg">clinical_notes</span></span>
+                                    <span
+                                        class="font-headline font-bold text-primary group-hover:text-white text-xs md:text-sm leading-tight transition-colors duration-300">Medical
+                                        Condition</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-primary transition-colors duration-300 group">
+                                    <span
+                                        class="w-9 h-9 shrink-0 rounded-lg bg-white text-secondary flex items-center justify-center shadow-sm"><span
+                                            class="material-symbols-outlined text-lg">straighten</span></span>
+                                    <span
+                                        class="font-headline font-bold text-primary group-hover:text-white text-xs md:text-sm leading-tight transition-colors duration-300">Travel
+                                        Distance</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-primary transition-colors duration-300 group">
+                                    <span
+                                        class="w-9 h-9 shrink-0 rounded-lg bg-white text-secondary flex items-center justify-center shadow-sm"><span
+                                            class="material-symbols-outlined text-lg">flight</span></span>
+                                    <span
+                                        class="font-headline font-bold text-primary group-hover:text-white text-xs md:text-sm leading-tight transition-colors duration-300">Aircraft
+                                        Availability</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-primary transition-colors duration-300 group">
+                                    <span
+                                        class="w-9 h-9 shrink-0 rounded-lg bg-white text-secondary flex items-center justify-center shadow-sm"><span
+                                            class="material-symbols-outlined text-lg">local_hospital</span></span>
+                                    <span
+                                        class="font-headline font-bold text-primary group-hover:text-white text-xs md:text-sm leading-tight transition-colors duration-300">Destination
+                                        Hospital Needs</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-7 py-6 bg-surface-container-low/70 border-t border-outline-variant/20">
+                            <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-4">
+                                Our team works with treating doctors, hospitals, aircraft providers, and ground
+                                ambulance services to identify suitable transportation arrangements and coordinate each
+                                stage of the journey.
+                            </p>
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-outline-variant/30 text-primary text-xs font-bold"><span
+                                        class="material-symbols-outlined text-sm text-secondary">stethoscope</span>Doctors</span>
+                                <span class="material-symbols-outlined text-outline text-sm">arrow_forward</span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-outline-variant/30 text-primary text-xs font-bold"><span
+                                        class="material-symbols-outlined text-sm text-secondary">local_hospital</span>Hospitals</span>
+                                <span class="material-symbols-outlined text-outline text-sm">arrow_forward</span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-outline-variant/30 text-primary text-xs font-bold"><span
+                                        class="material-symbols-outlined text-sm text-secondary">flight</span>Aircraft</span>
+                                <span class="material-symbols-outlined text-outline text-sm">arrow_forward</span>
+                                <span
+                                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-outline-variant/30 text-primary text-xs font-bold"><span
+                                        class="material-symbols-outlined text-sm text-secondary">ambulance</span>Ground
+                                    Ambulance</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- 24X7 Air Ambulance Service in Fiji — feature grid -->
-            <div class="mt-16 max-w-6xl mx-auto scroll-reveal">
-                <h3
-                    class="font-headline text-2xl md:text-3xl font-extrabold text-primary mb-3 tracking-tighter text-center">
-                    24X7 Air Ambulance Service in Fiji
-                </h3>
-                <p
-                    class="text-on-surface-variant font-body text-sm leading-relaxed mb-10 text-center max-w-3xl mx-auto">
-                    Air Medical 24X7 coordinates domestic and international air ambulance services across Fiji,
-                    helping patients access appropriate medical facilities when road transportation is impractical,
-                    too slow, or medically unsuitable.
-                </p>
+                <!-- Block 2: International Medical Evacuation To and From Fiji -->
+                <div class="mt-16 md:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14">
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Feature 1 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">support_agent</span>
+                    <!-- Image -->
+                    <div class="scroll-reveal-left order-2 lg:order-1 lg:h-full">
+                        <div class="relative group lg:h-full">
+                            <div
+                                class="hidden md:block absolute inset-0 -translate-x-4 translate-y-4 rounded-2xl bg-secondary/10 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500">
+                            </div>
+                            <div class="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5 lg:h-full">
+                                <img class="w-full aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[440px] object-cover object-[55%_center] transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+                                    src="assets/medical_escort_airport_assistance.png"
+                                    alt="Nurse assisting a patient in a wheelchair at an airport terminal – international medical evacuation to and from Fiji"
+                                    loading="lazy" decoding="async" />
+                                <div
+                                    class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-primary/80 to-transparent pointer-events-none">
+                                </div>
+                                <!-- Direction chips (on image, desktop) -->
+                                <div class="hidden md:grid absolute left-4 right-4 bottom-4 grid-cols-2 gap-3">
+                                    <div
+                                        class="rounded-xl bg-white/95 backdrop-blur px-4 py-3 shadow-lg hover:-translate-y-1 transition-transform duration-300">
+                                        <span
+                                            class="text-[10px] font-black uppercase tracking-widest text-secondary flex items-center gap-1 mb-0.5"><span
+                                                class="material-symbols-outlined text-sm">flight_takeoff</span>Outbound</span>
+                                        <span class="font-headline font-bold text-primary text-xs leading-tight block">Fiji
+                                            &rarr; Overseas Hospitals</span>
+                                    </div>
+                                    <div
+                                        class="rounded-xl bg-white/95 backdrop-blur px-4 py-3 shadow-lg hover:-translate-y-1 transition-transform duration-300">
+                                        <span
+                                            class="text-[10px] font-black uppercase tracking-widest text-secondary flex items-center gap-1 mb-0.5"><span
+                                                class="material-symbols-outlined text-sm">flight_land</span>Inbound</span>
+                                        <span class="font-headline font-bold text-primary text-xs leading-tight block">Treatment
+                                            Abroad &rarr; Fiji</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Floating badge -->
+                            <div
+                                class="absolute -top-4 left-4 md:-left-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-xl ring-1 ring-black/5">
+                                <span class="material-symbols-outlined text-secondary text-base">medical_services</span>
+                                <span
+                                    class="text-[10px] md:text-[11px] font-black uppercase tracking-widest text-primary">Medically
+                                    Supervised Travel</span>
+                            </div>
                         </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">24X7 Emergency Assistance</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            Our Fiji operations team is available around the clock to coordinate urgent medical
-                            transportation and assist families, hospitals, insurers, and other authorized
-                            representatives.
-                        </p>
+                        <!-- Direction chips (mobile) -->
+                        <div class="md:hidden grid grid-cols-2 gap-3 mt-4">
+                            <div class="rounded-xl bg-white px-4 py-3 shadow-sm border border-outline-variant/20">
+                                <span
+                                    class="text-[10px] font-black uppercase tracking-widest text-secondary flex items-center gap-1 mb-0.5"><span
+                                        class="material-symbols-outlined text-sm">flight_takeoff</span>Outbound</span>
+                                <span class="font-headline font-bold text-primary text-xs leading-tight block">Fiji &rarr;
+                                    Overseas Hospitals</span>
+                            </div>
+                            <div class="rounded-xl bg-white px-4 py-3 shadow-sm border border-outline-variant/20">
+                                <span
+                                    class="text-[10px] font-black uppercase tracking-widest text-secondary flex items-center gap-1 mb-0.5"><span
+                                        class="material-symbols-outlined text-sm">flight_land</span>Inbound</span>
+                                <span class="font-headline font-bold text-primary text-xs leading-tight block">Treatment
+                                    Abroad &rarr; Fiji</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Feature 2 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">medical_services</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">Experienced Medical
-                            Coordination</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            Each case is assessed according to the patient's medical condition and transportation
-                            requirements so that the appropriate level of medical support can be planned.
+                    <!-- Text -->
+                    <div class="scroll-reveal-right order-1 lg:order-2">
+                        <span
+                            class="inline-flex items-center gap-3 text-xs font-black uppercase tracking-widest text-secondary mb-4">
+                            <span class="w-8 h-0.5 bg-secondary rounded-full"></span>International Transfers
+                        </span>
+                        <h3
+                            class="font-headline text-2xl md:text-3xl font-extrabold text-primary mb-5 tracking-tighter">
+                            International Medical Evacuation To and From Fiji
+                        </h3>
+                        <p class="text-on-surface-variant font-body text-sm md:text-[15px] leading-relaxed mb-5">
+                            Air Medical 24X7 assists with international medical transfers for patients requiring
+                            transportation from Fiji to overseas hospitals, as well as patients returning to Fiji after
+                            receiving treatment abroad.
                         </p>
+                        <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-4">
+                            Depending on the patient's clinical condition and travel requirements, transportation may be
+                            arranged through dedicated air ambulance flights, commercial airline stretcher services, or
+                            medical escorts.
+                        </p>
+                        <ul class="space-y-2.5">
+                            <li
+                                class="flex items-center gap-4 p-3 pr-4 rounded-xl bg-white border border-outline-variant/20 border-l-4 border-l-primary hover:border-l-secondary hover:shadow-lg hover:translate-x-1 transition-all duration-300 group">
+                                <span
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-primary text-white flex items-center justify-center group-hover:bg-secondary transition-colors duration-300"><span
+                                        class="material-symbols-outlined text-xl">flight</span></span>
+                                <span class="flex-1 font-headline font-bold text-primary text-sm">Dedicated Air
+                                    Ambulance Flights</span>
+                                <span
+                                    class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all duration-300">chevron_right</span>
+                            </li>
+                            <li
+                                class="flex items-center gap-4 p-3 pr-4 rounded-xl bg-white border border-outline-variant/20 border-l-4 border-l-primary hover:border-l-secondary hover:shadow-lg hover:translate-x-1 transition-all duration-300 group">
+                                <span
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-primary text-white flex items-center justify-center group-hover:bg-secondary transition-colors duration-300"><span
+                                        class="material-symbols-outlined text-xl">airline_seat_flat</span></span>
+                                <span class="flex-1 font-headline font-bold text-primary text-sm">Commercial Airline
+                                    Stretcher Services</span>
+                                <span
+                                    class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all duration-300">chevron_right</span>
+                            </li>
+                            <li
+                                class="flex items-center gap-4 p-3 pr-4 rounded-xl bg-white border border-outline-variant/20 border-l-4 border-l-primary hover:border-l-secondary hover:shadow-lg hover:translate-x-1 transition-all duration-300 group">
+                                <span
+                                    class="w-10 h-10 shrink-0 rounded-lg bg-primary text-white flex items-center justify-center group-hover:bg-secondary transition-colors duration-300"><span
+                                        class="material-symbols-outlined text-xl">medical_services</span></span>
+                                <span class="flex-1 font-headline font-bold text-primary text-sm">Medical Escorts</span>
+                                <span
+                                    class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all duration-300">chevron_right</span>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- Feature 3 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">monitor_heart</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">ICU Air Ambulance
-                            Capability</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            For patients requiring intensive medical supervision, dedicated air ambulance aircraft
-                            can be arranged with appropriate critical-care equipment and trained medical personnel.
-                        </p>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">bed</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">Bed-to-Bed Medical Transfer</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            We coordinate transportation from the referring hospital or residence to the airport,
-                            flight, receiving airport, and destination hospital, helping reduce gaps between
-                            different stages of the journey.
-                        </p>
-                    </div>
-
-                    <!-- Feature 5 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">public</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">Domestic &amp;
-                            International Medical Evacuation</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            Our services can support medical transfers within Fiji as well as international
-                            repatriation and evacuation involving Fiji.
-                        </p>
-                    </div>
-
-                    <!-- Feature 6 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">connecting_airports</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">Domestic Air Ambulance
-                            Transfers in Fiji</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            Air Medical 24X7 coordinates hospital-to-hospital and bed-to-bed air ambulance transfers
-                            across Fiji, including transfers from island clinics and regional healthcare facilities
-                            to major medical centers.
-                        </p>
+                    <!-- Assessment note + actions (full width) -->
+                    <div class="order-3 lg:col-span-2 scroll-reveal flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
+                            <p
+                                class="flex items-start gap-3 rounded-xl bg-secondary/5 border border-secondary/15 p-4 text-sm text-on-surface-variant font-body leading-relaxed flex-1">
+                                <span class="material-symbols-outlined text-secondary text-xl">fact_check</span>
+                                <span>Each transfer is individually assessed to determine the appropriate medical support,
+                                    equipment, and transportation arrangements.</span>
+                            </p>
+                            <div class="flex flex-wrap gap-3 shrink-0">
+                                <a onclick="return gtag_report_phone_conversion(this.href);" href="tel:0008000504740"
+                                    class="inline-flex items-center gap-2 px-6 py-3.5 bg-secondary hover:bg-primary text-white font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 shadow-lg shadow-secondary/25 hover:-translate-y-0.5">
+                                    <span class="material-symbols-outlined text-sm">call</span>
+                                    Discuss a Transfer
+                                </a>
+                                <a href="#quote-form"
+                                    class="group/btn inline-flex items-center gap-2 px-6 py-3.5 border-2 border-primary/15 hover:border-primary hover:bg-primary hover:text-white text-primary font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 hover:-translate-y-0.5">
+                                    Get a Quote
+                                    <span
+                                        class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>

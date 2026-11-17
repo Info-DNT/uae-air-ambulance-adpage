@@ -725,156 +725,403 @@
 
 
     <!-- Air Ambulance Services in Maldives Section -->
-    <section class="py-16 bg-white border-b border-outline-variant/10 relative overflow-hidden">
+    <section id="maldives-air-ambulance-section"
+        class="py-16 md:py-20 bg-white border-b border-outline-variant/10 relative overflow-hidden">
+        <div class="absolute inset-x-0 top-0 h-[560px] pointer-events-none opacity-60"
+            style="background-image: radial-gradient(rgba(0,53,95,0.10) 1px, transparent 1px); background-size: 22px 22px; -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent); mask-image: linear-gradient(to bottom, #000 40%, transparent);">
+        </div>
+
         <div class="container mx-auto px-6 md:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-                <!-- Text Content -->
-                <div class="scroll-reveal-left">
-                    <span class="text-xs font-black uppercase tracking-widest text-secondary mb-2 block">24X7 Air
-                        Ambulance</span>
-                    <h1 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-6 tracking-tighter">
-                        Air Ambulance Services in Maldives &ndash; 24X7 Medical Air Ambulance &amp; Evacuation
-                    </h1>
-                    <div class="text-on-surface-variant font-body leading-relaxed space-y-4 text-sm">
-                        <p>
-                            When a medical emergency requires immediate transportation, every minute matters. Air
-                            Medical 24X7 provides reliable air ambulance services in Maldives for critical patients who
-                            need rapid, medically supervised transportation between cities, hospitals, and countries.
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Intro: text + image -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14">
+                    <!-- Text -->
+                    <div class="scroll-reveal-left">
+                        <span
+                            class="inline-flex items-center gap-3 text-xs font-black uppercase tracking-widest text-secondary mb-4">
+                            <span class="w-8 h-0.5 bg-secondary rounded-full"></span>24X7 Air Ambulance
+                        </span>
+                        <h1
+                            class="font-headline text-3xl md:text-4xl lg:text-[2.5rem] lg:leading-[1.1] font-extrabold text-primary mb-6 tracking-tighter">
+                            Air Ambulance Services in Maldives &ndash; 24X7 International Medical Evacuation
+                        </h1>
+                        <p
+                            class="pl-4 py-1 border-l-4 border-secondary text-on-surface-variant font-body leading-relaxed text-sm md:text-[15px] mb-5">
+                            A medical emergency while travelling or living abroad can be overwhelming, particularly when
+                            specialised treatment is required far from the patient's current location. In the Maldives,
+                            where communities, islands, and tourist resorts are spread across a large geographical area,
+                            arranging timely medical transportation requires careful planning and coordination.
                         </p>
-                        <p>
-                            Whether you need an air ambulance in Malé, Hulhumale, Addu City, Fuvahmulah,
-                            Kulhudhuffushi, Thinadhoo, Naifaru, Eydhafushi, Maafushi, Dhidhdhoo,
-                            Villingili, Gan, or another location in Maldives, our medical coordination
-                            team can arrange a customized transfer based on clinical and logistical
-                            requirements.
+                        <p class="text-on-surface-variant font-body leading-relaxed text-sm md:text-[15px] mb-4">
+                            Air Medical 24X7 coordinates air ambulance and medical evacuation services across the
+                            Maldives, including Malé, Hulhumalé, Addu City (Hithadhoo), Fuvahmulah, Kulhudhuffushi, and
+                            Thinadhoo. We help patients access appropriate medical facilities through professionally
+                            coordinated transportation arrangements.
                         </p>
-                        <p class="font-bold text-primary">
-                            Need an air ambulance urgently? Contact our 24X7 medical coordination team for a
-                            personalized assessment and quotation.
-                        </p>
-                        <div class="pt-4">
+                        <!-- Location chips -->
+                        <div class="flex flex-wrap gap-2 mb-7">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-0.5 transition-all duration-200 cursor-default"><span class="material-symbols-outlined text-sm">location_on</span>Malé</span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-0.5 transition-all duration-200 cursor-default"><span class="material-symbols-outlined text-sm">location_on</span>Hulhumalé</span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-0.5 transition-all duration-200 cursor-default"><span class="material-symbols-outlined text-sm">location_on</span>Addu City (Hithadhoo)</span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-0.5 transition-all duration-200 cursor-default"><span class="material-symbols-outlined text-sm">location_on</span>Fuvahmulah</span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-0.5 transition-all duration-200 cursor-default"><span class="material-symbols-outlined text-sm">location_on</span>Kulhudhuffushi</span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/30 text-primary text-xs font-bold hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-0.5 transition-all duration-200 cursor-default"><span class="material-symbols-outlined text-sm">location_on</span>Thinadhoo</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
                             <a onclick="return gtag_report_phone_conversion(this.href);" href="tel:0008000504740"
-                                class="inline-flex items-center gap-2 px-6 py-3.5 bg-secondary hover:bg-primary text-white font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 shadow-md hover:shadow-lg">
-                                <span class="material-symbols-outlined text-sm">call</span>
+                                class="group/btn inline-flex items-center gap-2 px-5 py-3.5 bg-secondary hover:bg-primary text-white font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 shadow-lg shadow-secondary/25 hover:-translate-y-0.5">
+                                <span class="material-symbols-outlined text-sm group-hover/btn:animate-pulse">call</span>
                                 Call Maldives Emergency Desk
+                            </a>
+                            <a href="#quote-form"
+                                class="group/btn inline-flex items-center gap-2 px-5 py-3.5 border-2 border-primary/15 hover:border-primary hover:bg-primary hover:text-white text-primary font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 hover:-translate-y-0.5">
+                                Get a Quote
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform duration-300">arrow_forward</span>
                             </a>
                         </div>
                     </div>
+
+                    <!-- Image (stretches to text height on desktop) -->
+                    <div class="scroll-reveal-right lg:h-full">
+                        <div class="relative group lg:h-full">
+                            <div
+                                class="hidden md:block absolute inset-0 translate-x-4 translate-y-4 rounded-2xl border-2 border-secondary/25 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500">
+                            </div>
+                            <div class="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5 lg:h-full">
+                                <img class="w-full aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[440px] object-cover object-[45%_center] transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+                                    src="assets/flight_medical_escort_service.jpg"
+                                    alt="Flight medical crew caring for a patient on board an air ambulance – air ambulance services in the Maldives"
+                                    loading="lazy" decoding="async" />
+                                <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-primary/70 to-transparent pointer-events-none"></div>
+                                <div class="absolute left-5 bottom-5 flex items-center gap-2 text-white">
+                                    <span class="material-symbols-outlined text-lg">sailing</span>
+                                    <span class="font-headline font-bold text-sm">Islands &middot; Resorts &middot; International</span>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute -top-4 right-4 md:-right-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-xl ring-1 ring-black/5 group-hover:-translate-y-1 transition-transform duration-500">
+                                <span class="relative flex h-2.5 w-2.5">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+                                </span>
+                                <span class="text-[10px] md:text-[11px] font-black uppercase tracking-widest text-primary">24X7 Medical Coordination</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Photo -->
-                <div class="scroll-reveal-right">
+                <!-- How we help: 3 panels -->
+                <div class="mt-16 md:mt-20 grid grid-cols-1 lg:grid-cols-3 gap-5">
+                    <!-- To and from -->
                     <div
-                        class="aspect-[16/10] bg-primary rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 group max-w-xl mx-auto lg:mx-0">
-                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            src="/ads/assets/air_ambulance_patient_care.png" alt="Air Ambulance Services in Maldives" />
+                        class="scroll-reveal-up relative overflow-hidden rounded-2xl bg-primary text-white p-7 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+                        <span class="material-symbols-outlined absolute -right-6 -bottom-8 text-[140px] text-white/5 pointer-events-none">sync_alt</span>
+                        <span class="w-11 h-11 rounded-xl bg-secondary flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300"><span class="material-symbols-outlined text-xl">flight</span></span>
+                        <h3 class="font-headline font-extrabold text-lg mb-3">To and From the Maldives</h3>
+                        <p class="relative text-white/80 font-body text-sm leading-relaxed mb-5">
+                            Whether a patient requires emergency medical evacuation from the Maldives to another country
+                            or an international medical transfer into the Maldives, our team helps organise the journey
+                            according to the patient's medical condition and transportation requirements.
+                        </p>
+                        <div class="relative space-y-2">
+                            <span class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-xs font-bold"><span class="material-symbols-outlined text-sm text-secondary-fixed-dim">flight_takeoff</span>Maldives &rarr; Another Country</span>
+                            <span class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-xs font-bold"><span class="material-symbols-outlined text-sm text-secondary-fixed-dim">flight_land</span>International Transfer &rarr; Maldives</span>
+                        </div>
+                    </div>
+
+                    <!-- Network -->
+                    <div
+                        class="scroll-reveal-up delay-100 rounded-2xl bg-white border border-outline-variant/20 p-7 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <span class="w-11 h-11 rounded-xl bg-primary text-white flex items-center justify-center mb-5 group-hover:bg-secondary transition-colors duration-300"><span class="material-symbols-outlined text-xl">hub</span></span>
+                        <h3 class="font-headline font-extrabold text-primary text-lg mb-3">International Network</h3>
+                        <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-5">
+                            Through our international medical transport network, we coordinate suitable aircraft,
+                            qualified medical professionals, onboard medical equipment, and ground or island
+                            transportation connections to support medically supervised patient transfers.
+                        </p>
+                        <ul class="grid grid-cols-2 gap-2">
+                            <li class="flex items-center gap-2 text-xs font-bold text-primary"><span class="material-symbols-outlined text-secondary text-base">check_circle</span>Aircraft</li>
+                            <li class="flex items-center gap-2 text-xs font-bold text-primary"><span class="material-symbols-outlined text-secondary text-base">check_circle</span>Medical Team</li>
+                            <li class="flex items-center gap-2 text-xs font-bold text-primary"><span class="material-symbols-outlined text-secondary text-base">check_circle</span>Onboard Equipment</li>
+                            <li class="flex items-center gap-2 text-xs font-bold text-primary"><span class="material-symbols-outlined text-secondary text-base">check_circle</span>Ground &amp; Island Links</li>
+                        </ul>
+                    </div>
+
+                    <!-- Who we assist -->
+                    <div
+                        class="scroll-reveal-up delay-200 rounded-2xl bg-white border border-outline-variant/20 p-7 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                        <span class="w-11 h-11 rounded-xl bg-primary text-white flex items-center justify-center mb-5 group-hover:bg-secondary transition-colors duration-300"><span class="material-symbols-outlined text-xl">diversity_3</span></span>
+                        <h3 class="font-headline font-extrabold text-primary text-lg mb-3">Who We Assist</h3>
+                        <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-5">
+                            We assist families, hospitals, international travellers, expatriates, insurance providers,
+                            and assistance companies with air ambulance and medical repatriation arrangements involving
+                            the Maldives.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-colors duration-200 cursor-default">Families</span>
+                            <span class="px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-colors duration-200 cursor-default">Hospitals</span>
+                            <span class="px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-colors duration-200 cursor-default">Travellers</span>
+                            <span class="px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-colors duration-200 cursor-default">Expatriates</span>
+                            <span class="px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-colors duration-200 cursor-default">Insurers</span>
+                            <span class="px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-xs font-bold hover:bg-secondary hover:text-white transition-colors duration-200 cursor-default">Assistance Companies</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- 24X7 Air Ambulance Service in Maldives — feature grid -->
-            <div class="mt-16 max-w-6xl mx-auto scroll-reveal">
-                <h3
-                    class="font-headline text-2xl md:text-3xl font-extrabold text-primary mb-3 tracking-tighter text-center">
-                    24X7 Air Ambulance Service in Maldives
-                </h3>
-                <p
-                    class="text-on-surface-variant font-body text-sm leading-relaxed mb-10 text-center max-w-3xl mx-auto">
-                    Air Medical 24X7 coordinates domestic and international air ambulance services across Maldives,
-                    helping patients access appropriate medical facilities when road transportation is impractical,
-                    too slow, or medically unsuitable.
-                </p>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Feature 1 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">support_agent</span>
+    <!-- 24X7 Air Ambulance and Medical Evacuation in Maldives Section -->
+    <section id="maldives-medical-evacuation-section"
+        class="py-16 md:py-20 bg-surface-container-low border-b border-outline-variant/10 relative overflow-hidden">
+        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 -right-32 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 md:px-8 relative z-10">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Row A: image + text -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14">
+                    <div class="scroll-reveal-left order-2 lg:order-1 lg:h-full">
+                        <div class="relative group lg:h-full">
+                            <div
+                                class="hidden md:block absolute inset-0 -translate-x-4 translate-y-4 rounded-2xl border-2 border-primary/20 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500">
+                            </div>
+                            <div class="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5 lg:h-full">
+                                <img class="w-full aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[420px] object-cover object-[60%_center] transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+                                    src="assets/ground_to_air_transfer.jpg"
+                                    alt="Medical crew transferring a stretcher patient to an air ambulance jet – 24X7 medical evacuation from the Maldives"
+                                    loading="lazy" decoding="async" />
+                            </div>
+                            <div
+                                class="absolute -top-4 left-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-xl ring-1 ring-black/5 group-hover:-translate-y-1 transition-transform duration-500">
+                                <span class="material-symbols-outlined text-secondary text-base">emergency</span>
+                                <span class="text-[10px] md:text-[11px] font-black uppercase tracking-widest text-primary">Medical Evacuation</span>
+                            </div>
                         </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">24X7 Emergency Assistance</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            Our Maldives operations team is available around the clock to coordinate urgent medical
-                            transportation and assist families, hospitals, insurers, and other authorized
-                            representatives.
-                        </p>
                     </div>
 
-                    <!-- Feature 2 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">medical_services</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">Experienced Medical
-                            Coordination</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            Each case is assessed according to the patient's medical condition and transportation
-                            requirements so that the appropriate level of medical support can be planned.
+                    <div class="scroll-reveal-right order-1 lg:order-2">
+                        <span
+                            class="inline-flex items-center gap-3 text-xs font-black uppercase tracking-widest text-secondary mb-4">
+                            <span class="w-8 h-0.5 bg-secondary rounded-full"></span>Medical Evacuation
+                        </span>
+                        <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-6 tracking-tighter leading-tight">
+                            24X7 Air Ambulance and Medical Evacuation in Maldives
+                        </h2>
+                        <p class="text-on-surface-variant font-body text-sm md:text-[15px] leading-relaxed mb-5">
+                            The Maldives is internationally recognised for its beautiful islands and tourism industry.
+                            However, its geographical layout can make access to advanced medical facilities challenging,
+                            particularly for patients located on remote islands or resort properties.
                         </p>
+                        <div
+                            class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary to-[#0b4a80] text-white p-5 md:p-6 shadow-lg hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300">
+                            <span class="material-symbols-outlined absolute -right-4 -bottom-6 text-[110px] text-white/5 pointer-events-none group-hover:text-white/10 transition-colors duration-500">route</span>
+                            <p class="relative font-body text-sm leading-relaxed text-white/90 mb-4">
+                                Air Medical 24X7 coordinates medical evacuation arrangements according to the patient's
+                                clinical condition, departure location, destination, and transportation requirements.
+                            </p>
+                            <div class="relative grid grid-cols-2 gap-2">
+                                <span class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-xs font-bold hover:bg-white hover:text-primary transition-colors duration-300 cursor-default"><span class="material-symbols-outlined text-sm">clinical_notes</span>Clinical Condition</span>
+                                <span class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-xs font-bold hover:bg-white hover:text-primary transition-colors duration-300 cursor-default"><span class="material-symbols-outlined text-sm">flight_takeoff</span>Departure Location</span>
+                                <span class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-xs font-bold hover:bg-white hover:text-primary transition-colors duration-300 cursor-default"><span class="material-symbols-outlined text-sm">flight_land</span>Destination</span>
+                                <span class="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 border border-white/15 text-xs font-bold hover:bg-white hover:text-primary transition-colors duration-300 cursor-default"><span class="material-symbols-outlined text-sm">airport_shuttle</span>Transport Needs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row B: services checklist -->
+                <div class="mt-12 scroll-reveal rounded-2xl bg-white border border-outline-variant/20 shadow-sm p-6 md:p-8">
+                    <h3 class="font-headline font-bold text-primary text-lg mb-5">Our medical transportation services may include:</h3>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-10">
+                        <li class="scroll-reveal-up group flex items-start gap-3 py-3 px-3 -mx-3 rounded-lg cursor-default hover:bg-surface-container-low hover:translate-x-1 transition-all duration-300 border-b border-outline-variant/20 text-on-surface font-body text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 group-hover:[font-variation-settings:'FILL'_1] transition-transform duration-300">check_circle</span>Emergency medical evacuation from the Maldives to international destinations</li>
+                        <li class="scroll-reveal-up delay-100 group flex items-start gap-3 py-3 px-3 -mx-3 rounded-lg cursor-default hover:bg-surface-container-low hover:translate-x-1 transition-all duration-300 border-b border-outline-variant/20 text-on-surface font-body text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 group-hover:[font-variation-settings:'FILL'_1] transition-transform duration-300">check_circle</span>International air ambulance transfers to the Maldives</li>
+                        <li class="scroll-reveal-up group flex items-start gap-3 py-3 px-3 -mx-3 rounded-lg cursor-default hover:bg-surface-container-low hover:translate-x-1 transition-all duration-300 border-b border-outline-variant/20 text-on-surface font-body text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 group-hover:[font-variation-settings:'FILL'_1] transition-transform duration-300">check_circle</span>ICU-to-ICU patient transportation</li>
+                        <li class="scroll-reveal-up delay-100 group flex items-start gap-3 py-3 px-3 -mx-3 rounded-lg cursor-default hover:bg-surface-container-low hover:translate-x-1 transition-all duration-300 border-b border-outline-variant/20 text-on-surface font-body text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 group-hover:[font-variation-settings:'FILL'_1] transition-transform duration-300">check_circle</span>Medical repatriation for international travellers and expatriates</li>
+                        <li class="scroll-reveal-up group flex items-start gap-3 py-3 px-3 -mx-3 rounded-lg cursor-default hover:bg-surface-container-low hover:translate-x-1 transition-all duration-300 border-b border-outline-variant/20 text-on-surface font-body text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 group-hover:[font-variation-settings:'FILL'_1] transition-transform duration-300">check_circle</span>Medical transportation for critically ill patients</li>
+                        <li class="scroll-reveal-up delay-100 group flex items-start gap-3 py-3 px-3 -mx-3 rounded-lg cursor-default hover:bg-surface-container-low hover:translate-x-1 transition-all duration-300 border-b border-outline-variant/20 text-on-surface font-body text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 group-hover:[font-variation-settings:'FILL'_1] transition-transform duration-300">check_circle</span>Hospital-to-hospital transfers</li>
+                        <li class="scroll-reveal-up group flex items-start gap-3 py-3 px-3 -mx-3 rounded-lg cursor-default hover:bg-surface-container-low hover:translate-x-1 transition-all duration-300 border-b md:border-b-0 border-outline-variant/20 text-on-surface font-body text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 group-hover:[font-variation-settings:'FILL'_1] transition-transform duration-300">check_circle</span>Medical escort services for patients suitable for commercial flights</li>
+                        <li class="scroll-reveal-up delay-100 group flex items-start gap-3 py-3 px-3 -mx-3 rounded-lg cursor-default hover:bg-surface-container-low hover:translate-x-1 transition-all duration-300 text-on-surface font-body text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary text-xl group-hover:scale-110 group-hover:[font-variation-settings:'FILL'_1] transition-transform duration-300">check_circle</span>Ground ambulance, airport, and island transportation coordination</li>
+                    </ul>
+
+                    <div class="mt-6 pt-6 border-t border-outline-variant/20 flex flex-col lg:flex-row lg:items-center gap-5">
+                        <p class="flex-1 flex items-start gap-3 text-on-surface-variant font-body text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary text-xl">fact_check</span>
+                            <span>Every medical transfer is assessed individually to identify the most appropriate
+                                transportation arrangement, including any necessary connections between islands,
+                                airports, and medical facilities.</span>
+                        </p>
+                        <a onclick="return gtag_report_phone_conversion(this.href);" href="tel:0008000504740"
+                            class="shrink-0 inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-secondary hover:bg-primary text-white font-headline text-xs font-black uppercase tracking-widest rounded-lg transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                            <span class="material-symbols-outlined text-sm">call</span>
+                            Discuss a Transfer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bed-to-Bed Air Ambulance Services in Maldives Section -->
+    <section id="maldives-bed-to-bed-section"
+        class="py-16 md:py-24 bg-gradient-to-b from-white via-[#f3f8fc] to-white border-b border-outline-variant/10 relative overflow-hidden">
+        <!-- Soft accents -->
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[400px] rounded-full bg-[#0ea5b7]/5 blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 md:px-8 relative z-10">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- Centered header -->
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-14 scroll-reveal">
+                    <span
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-[11px] font-black uppercase tracking-widest text-primary mb-5">
+                        <span class="material-symbols-outlined text-secondary text-sm">bed</span>
+                        Bed-to-Bed Transfers
+                        <span class="material-symbols-outlined text-secondary text-sm">arrow_forward</span>
+                        <span class="material-symbols-outlined text-secondary text-sm">local_hospital</span>
+                    </span>
+                    <h2
+                        class="font-headline text-3xl md:text-[2.75rem] md:leading-[1.1] font-extrabold text-primary mb-5 tracking-tighter">
+                        Bed-to-Bed Air Ambulance Services in Maldives
+                    </h2>
+                    <p class="text-on-surface-variant font-body text-sm md:text-base leading-relaxed">
+                        Arranging an air ambulance involves more than selecting an aircraft. Patients may require
+                        coordinated transportation from their current medical facility or resort to the departure
+                        airport, followed by onward transportation to the receiving hospital.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12">
+
+                    <!-- Left: photo with floating card -->
+                    <div class="lg:col-span-7 scroll-reveal-left lg:h-full">
+                        <div class="relative group flex flex-col lg:h-full">
+                            <div class="relative rounded-[28px] overflow-hidden shadow-2xl ring-1 ring-black/5 bg-primary">
+                                <img class="w-full aspect-[16/9] object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+                                    src="assets/air-ambulance-maldives-bed-to-bed.webp"
+                                    alt="Air Medical 24X7 crew wheeling a stretcher patient to an air ambulance jet beside a Maldives island resort – bed-to-bed air ambulance services in Maldives"
+                                    width="1672" height="941" loading="lazy" decoding="async" />
+                                <span
+                                    class="absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/25 to-transparent group-hover:left-[130%] transition-all duration-[1100ms] ease-out pointer-events-none"></span>
+                            </div>
+
+                            <!-- Floating info card -->
+                            <div
+                                class="relative -mt-10 md:-mt-14 mx-4 md:mx-8 rounded-2xl bg-white/95 backdrop-blur shadow-xl ring-1 ring-black/5 p-5 md:p-6 flex items-start gap-4 group-hover:-translate-y-1 transition-transform duration-500">
+                                <span
+                                    class="w-12 h-12 shrink-0 rounded-2xl bg-gradient-to-br from-secondary to-[#e0475a] text-white flex items-center justify-center shadow-lg"><span
+                                        class="material-symbols-outlined text-2xl">family_restroom</span></span>
+                                <p class="text-primary font-body text-sm md:text-[15px] leading-relaxed font-medium">
+                                    Air Medical 24X7 assists with coordinating bed-to-bed medical transfers, helping
+                                    families manage the different stages of international patient transportation.
+                                </p>
+                            </div>
+
+                            <!-- Route cards -->
+                            <div class="mt-6 lg:mt-auto lg:pt-6 mx-4 md:mx-8 grid grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-2 md:gap-3">
+                                <div class="group/route flex flex-col items-center justify-center text-center gap-2 px-2 py-4 rounded-2xl bg-white border border-outline-variant/30 shadow-sm hover:border-secondary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                    <span class="w-11 h-11 rounded-full bg-secondary/10 text-secondary flex items-center justify-center group-hover/route:bg-secondary group-hover/route:text-white transition-colors duration-300"><span class="material-symbols-outlined text-xl">beach_access</span></span>
+                                    <span class="font-headline font-bold text-primary text-xs md:text-sm leading-tight">Resort / Facility</span>
+                                </div>
+                                <span class="material-symbols-outlined text-secondary/60 text-2xl">trending_flat</span>
+                                <div class="group/route flex flex-col items-center justify-center text-center gap-2 px-2 py-4 rounded-2xl bg-white border border-outline-variant/30 shadow-sm hover:border-secondary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                    <span class="w-11 h-11 rounded-full bg-secondary/10 text-secondary flex items-center justify-center group-hover/route:bg-secondary group-hover/route:text-white transition-colors duration-300"><span class="material-symbols-outlined text-xl">flight_takeoff</span></span>
+                                    <span class="font-headline font-bold text-primary text-xs md:text-sm leading-tight">Departure Airport</span>
+                                </div>
+                                <span class="material-symbols-outlined text-secondary/60 text-2xl">trending_flat</span>
+                                <div class="group/route flex flex-col items-center justify-center text-center gap-2 px-2 py-4 rounded-2xl bg-white border border-outline-variant/30 shadow-sm hover:border-secondary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                    <span class="w-11 h-11 rounded-full bg-secondary/10 text-secondary flex items-center justify-center group-hover/route:bg-secondary group-hover/route:text-white transition-colors duration-300"><span class="material-symbols-outlined text-xl">local_hospital</span></span>
+                                    <span class="font-headline font-bold text-primary text-xs md:text-sm leading-tight">Receiving Hospital</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Feature 3 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">monitor_heart</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">ICU Air Ambulance
-                            Capability</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            For patients requiring intensive medical supervision, dedicated air ambulance aircraft
-                            can be arranged with appropriate critical-care equipment and trained medical personnel.
+                    <!-- Right: vertical journey stepper -->
+                    <div class="lg:col-span-5">
+                        <h3 class="font-headline font-extrabold text-primary text-lg mb-4 scroll-reveal">The process
+                            generally includes:</h3>
+
+                        <ol class="relative">
+                            <li class="scroll-reveal-up group relative flex gap-4 pb-3">
+                                <span class="absolute left-[21px] top-12 bottom-0 w-0.5 bg-outline-variant/40 overflow-hidden"><span class="block w-full h-0 bg-secondary group-hover:h-full transition-all duration-500"></span></span>
+                                <span class="relative z-10 w-11 h-11 shrink-0 rounded-full bg-primary text-white font-headline font-black text-sm flex items-center justify-center ring-4 ring-primary/10 group-hover:bg-secondary group-hover:ring-secondary/20 group-hover:scale-110 transition-all duration-300">01</span>
+                                <div class="flex-1 rounded-2xl px-4 py-2.5 -mt-1 group-hover:bg-white group-hover:shadow-lg transition-all duration-300">
+                                    <h4 class="flex items-center gap-2 font-headline font-bold text-primary text-[15px] mb-0.5"><span class="material-symbols-outlined text-secondary text-lg">clinical_notes</span>Initial Medical Assessment</h4>
+                                    <p class="text-on-surface-variant font-body text-[13px] leading-relaxed">Review of the patient's medical condition, medical records, and travel requirements.</p>
+                                </div>
+                            </li>
+                            <li class="scroll-reveal-up delay-100 group relative flex gap-4 pb-3">
+                                <span class="absolute left-[21px] top-12 bottom-0 w-0.5 bg-outline-variant/40 overflow-hidden"><span class="block w-full h-0 bg-secondary group-hover:h-full transition-all duration-500"></span></span>
+                                <span class="relative z-10 w-11 h-11 shrink-0 rounded-full bg-primary text-white font-headline font-black text-sm flex items-center justify-center ring-4 ring-primary/10 group-hover:bg-secondary group-hover:ring-secondary/20 group-hover:scale-110 transition-all duration-300">02</span>
+                                <div class="flex-1 rounded-2xl px-4 py-2.5 -mt-1 group-hover:bg-white group-hover:shadow-lg transition-all duration-300">
+                                    <h4 class="flex items-center gap-2 font-headline font-bold text-primary text-[15px] mb-0.5"><span class="material-symbols-outlined text-secondary text-lg">flight</span>Aircraft and Medical Team Planning</h4>
+                                    <p class="text-on-surface-variant font-body text-[13px] leading-relaxed">Identification of suitable aircraft, medical personnel, and onboard equipment.</p>
+                                </div>
+                            </li>
+                            <li class="scroll-reveal-up delay-200 group relative flex gap-4 pb-3">
+                                <span class="absolute left-[21px] top-12 bottom-0 w-0.5 bg-outline-variant/40 overflow-hidden"><span class="block w-full h-0 bg-secondary group-hover:h-full transition-all duration-500"></span></span>
+                                <span class="relative z-10 w-11 h-11 shrink-0 rounded-full bg-primary text-white font-headline font-black text-sm flex items-center justify-center ring-4 ring-primary/10 group-hover:bg-secondary group-hover:ring-secondary/20 group-hover:scale-110 transition-all duration-300">03</span>
+                                <div class="flex-1 rounded-2xl px-4 py-2.5 -mt-1 group-hover:bg-white group-hover:shadow-lg transition-all duration-300">
+                                    <h4 class="flex items-center gap-2 font-headline font-bold text-primary text-[15px] mb-0.5"><span class="material-symbols-outlined text-secondary text-lg">sailing</span>Island and Ground Transportation</h4>
+                                    <p class="text-on-surface-variant font-body text-[13px] leading-relaxed">Coordination of required local transfers, including boat, domestic flight, or ground ambulance arrangements where applicable.</p>
+                                </div>
+                            </li>
+                            <li class="scroll-reveal-up delay-300 group relative flex gap-4 pb-3">
+                                <span class="absolute left-[21px] top-12 bottom-0 w-0.5 bg-outline-variant/40 overflow-hidden"><span class="block w-full h-0 bg-secondary group-hover:h-full transition-all duration-500"></span></span>
+                                <span class="relative z-10 w-11 h-11 shrink-0 rounded-full bg-primary text-white font-headline font-black text-sm flex items-center justify-center ring-4 ring-primary/10 group-hover:bg-secondary group-hover:ring-secondary/20 group-hover:scale-110 transition-all duration-300">04</span>
+                                <div class="flex-1 rounded-2xl px-4 py-2.5 -mt-1 group-hover:bg-white group-hover:shadow-lg transition-all duration-300">
+                                    <h4 class="flex items-center gap-2 font-headline font-bold text-primary text-[15px] mb-0.5"><span class="material-symbols-outlined text-secondary text-lg">connecting_airports</span>International Medical Flight</h4>
+                                    <p class="text-on-surface-variant font-body text-[13px] leading-relaxed">Coordination of the flight and medically supervised transportation.</p>
+                                </div>
+                            </li>
+                            <li class="scroll-reveal-up delay-400 group relative flex gap-5">
+                                <span class="relative z-10 w-11 h-11 shrink-0 rounded-full bg-secondary text-white font-headline font-black text-sm flex items-center justify-center ring-4 ring-secondary/20 group-hover:scale-110 transition-all duration-300"><span class="material-symbols-outlined text-xl">check</span></span>
+                                <div class="flex-1 rounded-2xl px-4 py-2.5 -mt-1 bg-secondary/5 border border-secondary/15 group-hover:bg-white group-hover:shadow-lg transition-all duration-300">
+                                    <h4 class="flex items-center gap-2 font-headline font-bold text-primary text-[15px] mb-0.5"><span class="material-symbols-outlined text-secondary text-lg">local_hospital</span>Receiving Hospital Handover</h4>
+                                    <p class="text-on-surface-variant font-body text-[13px] leading-relaxed">Coordination with the receiving facility to support a smooth transfer of care.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- 24X7 bar -->
+                <div
+                    class="mt-14 scroll-reveal rounded-full bg-white border border-outline-variant/20 shadow-lg p-2 pl-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-6 max-md:rounded-2xl max-md:p-5">
+                    <div class="flex-1 flex items-center gap-3">
+                        <span class="relative flex h-3 w-3 shrink-0">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+                        </span>
+                        <p class="text-primary font-body text-sm leading-relaxed font-medium">
+                            Our team is available 24X7 to assist with medical transportation enquiries and coordinate
+                            suitable transfer arrangements.
                         </p>
                     </div>
-
-                    <!-- Feature 4 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">bed</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">Bed-to-Bed Medical Transfer</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            We coordinate transportation from the referring hospital or residence to the airport,
-                            flight, receiving airport, and destination hospital, helping reduce gaps between
-                            different stages of the journey.
-                        </p>
-                    </div>
-
-                    <!-- Feature 5 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">public</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">Domestic &amp;
-                            International Medical Evacuation</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            Our services can support medical transfers within Maldives as well as international
-                            repatriation and evacuation involving Maldives.
-                        </p>
-                    </div>
-
-                    <!-- Feature 6 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4 shadow-lg shadow-primary/20 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
-                            <span class="material-symbols-outlined text-xl">connecting_airports</span>
-                        </div>
-                        <h4 class="font-headline font-bold text-primary text-base mb-2">Domestic Air Ambulance
-                            Transfers in Maldives</h4>
-                        <p class="text-on-surface-variant font-body text-xs leading-relaxed">
-                            Air Medical 24X7 coordinates hospital-to-hospital and bed-to-bed air ambulance transfers
-                            across Maldives, including transfers from island clinics, resort medical centers,
-                            and atoll healthcare facilities to major hospitals.
-                        </p>
+                    <div class="flex flex-wrap gap-2 shrink-0">
+                        <a onclick="return gtag_report_phone_conversion(this.href);" href="tel:0008000504740"
+                            class="inline-flex items-center gap-2 px-6 py-3.5 bg-secondary hover:bg-primary text-white font-headline text-xs font-black uppercase tracking-widest rounded-full transition-all duration-300 shadow-md hover:-translate-y-0.5">
+                            <span class="material-symbols-outlined text-sm">call</span>
+                            Plan a Transfer
+                        </a>
+                        <a href="#quote-form"
+                            class="group/btn inline-flex items-center gap-2 px-6 py-3.5 bg-primary/5 hover:bg-primary hover:text-white text-primary font-headline text-xs font-black uppercase tracking-widest rounded-full transition-all duration-300">
+                            Get a Quote
+                            <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform duration-300">arrow_forward</span>
+                        </a>
                     </div>
                 </div>
             </div>
